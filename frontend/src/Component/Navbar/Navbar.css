@@ -1,8 +1,13 @@
 .navbar{
+    position: fixed;
+    top: 0;            /* stick to top */
+    left: 0;           /* align to left */
+    width: 100%;
     display:flex;
     justify-content: space-around;
     padding: 16px;
-    box-shadow: 0 1px 3px -2px black;
+    box-shadow: 0 1px 20px -2px rgb(16, 17, 19);
+    z-index: 1000;
 }
 
 .nav-logo{
@@ -28,6 +33,16 @@
 }
 .nav-menu li{
     cursor: pointer;
+
+}
+
+.nav-menu li a{
+    text-decoration: none;
+    color: #626262;
+    font-size: 25px;
+}
+.nav-menu li a:hover{
+    color: black;
 
 }
 
