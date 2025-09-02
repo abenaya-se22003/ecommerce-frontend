@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../assets/logo.png'
 import cart_icon from '../../assets/cart_icon.png'
 import './Navbar.css'
-
+import { Link } from "react-router";
 
 function Navbar() {
+
+const [menu,setmenu] = useState("shop")
+  
   return (
 
     <div className="navbar">
+
       
         <div className="nav-logo">
             <img src={logo} alt="" />
@@ -15,15 +19,15 @@ function Navbar() {
         </div>
 
         <ul className="nav-menu">
-            <li><a href="#Shop">Shop</a></li>
-            <li><a href="#Men">Men</a></li>
-            <li><a href="#Women">Women</a></li>
-            <li><a href="#Kids">Kids</a></li>
+            <li onClick={()=>{setmenu("shop")}}><Link to='/'>Shop</Link>{menu==="shop"?<hr />:<></>} </li>
+            <li  onClick={()=>{setmenu("mens")}}><Link to='/mens'>Mens</Link>{menu==="mens"?<hr />:<></>} </li>
+            <li  onClick={()=>{setmenu("womens")}}><Link to='/womens'>Womens</Link>{menu==="womens"?<hr />:<></>} </li>
+            <li  onClick={()=>{setmenu("kids")}}><Link to='/kids'>Kids</Link>{menu==="kids"?<hr />:<></>} </li>
              </ul>
 
        <div className="nav-logo-cart">
-        <button>LOGIN</button>
-        <img src={cart_icon} alt="" />
+       <Link to='/login'> <button>LOGIN</button></Link>
+        <Link to='/cart'><img src={cart_icon} alt="" /></Link>
         <div className="nav-cart-count">0</div>
        </div>
 
