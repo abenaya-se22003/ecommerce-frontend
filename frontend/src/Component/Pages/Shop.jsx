@@ -1,10 +1,9 @@
 import React from 'react'
-import Hero from '../Hero/Hero'
 
 function Shop() {
   return (
-    <div>
-    <Hero />
+    <div>Shop
+      <h1>Akila Abeee</h1>
     </div>
   )
 }
