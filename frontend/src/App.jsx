@@ -16,7 +16,7 @@ function App() {
     <>
       <Navbar />
    
-    <div style={{ marginTop: "80px", padding: "30px" }}></div>
+    <div style={{ marginTop: "54px", padding: "30px" }}></div>
     
       <Routes>
         <Route path='/' element={<Shop />} />

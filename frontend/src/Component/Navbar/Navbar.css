@@ -28,11 +28,11 @@
 .nav-menu{
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 60px;
     list-style: none;
-    font-size: 20px;
+    font-size: 30px;
     color: #626262;
-    font-weight: 500;
+    font-weight: 600;
 
 }
 .nav-menu li{
@@ -86,6 +86,7 @@ margin-left: -50px;
 justify-content: center;
 align-items: center;
 font-size: 20px;
+font-family: 'Courier New', Courier, monospace;
 background:red;
 color: white;
 

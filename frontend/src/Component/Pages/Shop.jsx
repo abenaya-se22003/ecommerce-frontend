@@ -1,10 +1,15 @@
 import React from 'react'
+import Hero from '../Hero/Hero'
 
 function Shop() {
   return (
-    <div>Shop
-      <h1>Akila Abeee</h1>
-    </div>
+    
+    <>
+    
+     <Hero />
+
+    </>
+
   )
 }
 
