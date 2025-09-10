@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from '../Hero/Hero'
+import Popular from '../Popular/Popular'
 
 function Shop() {
   return (
@@ -7,6 +8,8 @@ function Shop() {
     <>
     
      <Hero />
+     
+     <Popular />
 
     </>
 
