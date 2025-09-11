@@ -8,6 +8,7 @@ import ShopCategory from './Component/Pages/ShopCategory';
 import Product from './Component/Pages/Product';
 import Cart from './Component/Pages/Cart'
 import LoginSignup from './Component/Pages/LoginSignup';
+import Footer from './Component/Footer/Footer ';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -29,6 +30,7 @@ function App() {
         <Route path='/login' element={<LoginSignup />} />
         <Route path='/signup' element={<LoginSignup />} />
       </Routes>
+      <Footer />
     </>
   );
 }

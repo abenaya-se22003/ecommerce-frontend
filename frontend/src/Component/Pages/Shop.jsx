@@ -6,6 +6,7 @@ import Newcollection from '../Newcollection/Newcollection'
 import NewsLetter from '../NewsLetter/NewsLetter'
 
 
+
 function Shop() {
   return (
     
@@ -16,6 +17,7 @@ function Shop() {
      <Offer />
      <Newcollection />
      <NewsLetter />
+     
 
     
 
