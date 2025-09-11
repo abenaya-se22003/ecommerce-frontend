@@ -1,0 +1,38 @@
+.offer{
+    display: flex;
+    gap: 50px;
+    background: linear-gradient(180deg,#fde1fd,#e1ffea22 60%);
+    justify-content: center;
+    margin: 0 20px 20px 20px;
+}
+.offer-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin-left: 40px;
+}
+.offer-left h1{
+    font-size: 80px ;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.offer-left p{
+     font-family: Arial, Helvetica, sans-serif;
+}
+.offer-left button{
+    border: red;
+    border-radius: 50px;
+    background: red;
+    color: white;
+    font-size: 20px;
+    width: 130px;
+    height: 40px;
+}
+.offer-left button:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
+
+}
