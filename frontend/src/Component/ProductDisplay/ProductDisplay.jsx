@@ -1,5 +1,7 @@
 import React from 'react'
 import './ProductDisplay.css'
+import star_icon from '../../assets/star_icon.png'
+import star_dull_icon from '../../assets/star_dull_icon.png'
 
 function ProductDisplay(props) {
     const {product} = props;
@@ -19,6 +21,36 @@ function ProductDisplay(props) {
         </div>
         
         </div> 
+        <div className="productdisplay-right">
+          <h1>{product.name}</h1>
+          <div className="display-star">
+            <img src={star_icon} alt="" />
+            <img src={star_icon} alt="" />
+            <img src={star_icon} alt="" />
+            <img src={star_icon} alt="" />
+            <img src={star_dull_icon}alt="" />
+            <p>(124)</p>
+          </div>
+          <div className="display-price">
+            <div className="display-price-old">${product.old_price}</div>
+            <div className="display-price-new">${product.new_price}</div>
+          </div>
+          <div className="display-description">
+            <p>A lightweight , usually knitted,pullover shirt, clode - fitting and with a round neckline and short sleeves,worn as an undershirt or outer garment</p>
+          </div>
+          <div className="display-right-size">
+            <h1>Select size</h1>
+            <div className="produt-chose-size">
+              <div>S</div>
+              <div>M</div>
+              <div>L</div>
+              <div>XL</div>
+              <div>XXL</div>
+            </div>
+          </div>
+          <button>ADD TO CART</button>
+          
+        </div>
 
     </div>
   )
