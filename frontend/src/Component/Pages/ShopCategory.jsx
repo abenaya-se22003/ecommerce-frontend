@@ -1,5 +1,5 @@
 import React from "react";
-import "./Css/shopCategory.css";
+import "./Css/ShopCategory.css";
 import dropdown_icon from "../../assets/dropdown_icon.png";
 import Item from "../Item/item";
 import all_product from "../../assets/all_product";
